@@ -1,4 +1,4 @@
-
+ var switching;
 
 function deleteRow(row)
 { var Row=row.parentNode.parentNode;
@@ -11,10 +11,10 @@ function EditRow(edit)    //enables editing
   var button=document.getElementById("edit");
   if (x.contentEditable == "true") {
     x.contentEditable = "false";
-    x.style.backgroundColor="#e6e6fa";
+     x.style.backgroundColor="#e6e6fa";
     button.innerHTML = "Edit";
 } else {
-    x.contentEditable = "true";
+     x.contentEditable = "true";
     button.innerHTML = "Submit";
     x.style.backgroundColor="white";
 }
@@ -52,8 +52,36 @@ function insRow()                                        //adds mentee details t
     c2.innerHTML=rno;
     c3.innerHTML=comment;
     c4.innerHTML=rate;
-    c2.cID=rno;
+    c4.ID="rate";
     c3.title=comment;
     c1.title=Name;
-    console.log(c2.class);
+    switching=true;
+    
   }
+
+
+  function sort() //sorts based on rating
+  {  var table, rows, switching, i, x, y, shouldSwitch;
+     table = document.getElementById("list");
+     switching = true;
+     while (switching) {
+      switching = false;
+     rows = table.getElementsByTagName("TR");
+     for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[3];
+      y = rows[i + 1].getElementsByTagName("TD")[3];
+      if (x.innerHTML > y.innerHTML) {
+          shouldSwitch = true;
+        break;
+      }
+     }
+     if (shouldSwitch) {
+       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  
+    }
+  }
+
+
