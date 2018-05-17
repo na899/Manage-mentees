@@ -1,0 +1,29 @@
+body{
+background-color:#e6e6fa;
+}
+table{ background-color: #7469E1;
+	border:solid black;
+	max-width: 80vw;
+}
+#list
+{
+	border:none;
+padding-left: 0.5vw;
+background-color: #e6e6fa;
+}
+td{
+	border: 0.2vw solid grey;
+	min-width: 20vw;
+	max-width: 20vw;
+	align-content: center;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	max-height: 7vw;
+}
+button{
+	background-color: red;
+	color:white;
+}
+#edit{
+	background-color: green;
+}

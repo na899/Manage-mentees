@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<title>Manage your mentees</title>
+</head>
+<body>
+<h2>Manage your mentees</h2>
+
+	 <fieldset>
+
+      <b>Add mentees<b><br>
+       <input id="na" type="text" placeholder="Enter name" >
+       <input id ="rno" type="text" placeholder="Enter Roll no.">
+      <input id="cmt" type="text" placeholder="Enter comment">
+      <input id="rate" type="number" placeholder="Rating" min="0" max="10">
+      <input type="submit" value="Add" onclick="insRow()">
+      
+    </fieldset><br>
+    <div>*Place cursor over the cell to view complete details.</div><br>
+   <table id="head">
+	   <tr id="title">
+	   	<td>  Name	   	</td>
+	   	<td>  Roll no.    </td>
+	   	<td>  Comments    </td>
+	   	<td>  Rating</td>
+      
+	   </tr>
+    </table>
+    <table id="list">
+
+	      </table>
+    <script type="text/javascript" src="mentee.js"></script>
+</body>
+</html>
