@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="style.css"/>
-  <title>Manage your mentees</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <title>Manage your mentees</title>
 </head>
 <body>
-<h2>Manage your mentees</h2>
+    <h1 align="center">Manage your mentees</h1><br>
 
-   <fieldset>
+    <fieldset>
 
-      <b>Add and Sort<b><br>
-       <input id="na" type="text" placeholder="Enter name" >
-       <input id ="rno" type="text" placeholder="Enter Roll no.">
-      <input id="cmt" type="text" placeholder="Enter comment">
-      <input id="rate" type="number" placeholder="Rating" min="0" max="10">
-      <input type="submit" value="Add" onclick="insRow()">
-      <input type="submit" value="Sort" onclick="sort()">
-    </fieldset>
+        <b>Add mentees<b><br>
+        <input id="name" type="text" placeholder="Enter name" >
+        <input id ="rollNo" type="text" placeholder="Enter Roll no.">
+        <input id="comment" type="text" placeholder="Enter comment">
+        <input id="rate" type="number" placeholder="Rating" min="0" max="10">
+        <input type="submit" value="Add" onclick="insRow()">
+    </fieldset><br>
+    <div><b>Click to Sort based on ratings</b>
+        <input type="submit" value="Sort" onclick="sort()"></div>
     <br>
-    <div>*Place cursor over the cell to view complete details.</div><br>
-   <table id="head">
-     <tr id="title">
-      <td>  Name      </td>
-      <td>  Roll no.    </td>
-      <td>  Comments    </td>
-      <td>  Rating(0-10)</td>
-      
-     </tr>
+    <div>*Place cursor over the cell to view complete details for name and comments.</div><br>
+  
+    <table id="list"  align="center">
+            <tr id="title" >
+              <td>  Name      </td>
+              <td>  Roll no.    </td>
+              <td>  Comments    </td>
+              <td>  Rating(0-10)</td>
+            </tr>
     </table>
-    <table id="list">
-
-        </table>
     <script type="text/javascript" src="mentee.js"></script>
 </body>
 </html>

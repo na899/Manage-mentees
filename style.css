@@ -1,15 +1,27 @@
 body{
 background-color:#e6e6fa;
+font-family: cursive;
 }
-table{ background-color: #7469E1;
-	border:solid black;
-	max-width: 80vw;
+
+fieldset{
+	background-color: #4c4c93;
+	text-align: center;
+	max-width: 70vw;
+	margin: auto;
+		color:#333;
+
+}
+div{text-align: center;
+	margin:auto;
 }
 #list
 {
 	border:none;
 padding-left: 0.5vw;
 background-color: #e6e6fa;
+}
+tr:hover{
+	background-color: #777;
 }
 td{
 	border: 0.2vw solid grey;
@@ -19,6 +31,13 @@ td{
 	overflow:hidden;
 	text-overflow: ellipsis;
 	max-height: 7vw;
+	border-radius: 10%;
+}
+
+#title{ background-color: #7469E1;
+	border:solid black;
+	max-width: 80vw;
+	border-radius: 0%;
 }
 button{
 	background-color: red;
@@ -26,4 +45,10 @@ button{
 }
 #edit{
 	background-color: green;
+}
+h1{ 	max-width: 40vw;
+	margin: auto;
+	font-family: Snell Roundhand;
+	color: #0000ff;
+	text-shadow: 0.2vw 0.1vw #555;
 }
