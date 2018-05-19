@@ -6,30 +6,32 @@
     <title>Manage your mentees</title>
 </head>
 <body>
-    <h1 align="center">Manage your mentees</h1><br>
+<h1 align="center">Manage your mentees</h1><br>
 
-    <fieldset>
+     <fieldset>
 
-        <b>Add mentees<b><br>
-        <input id="name" type="text" placeholder="Enter name" >
-        <input id ="rollNo" type="text" placeholder="Enter Roll no.">
-        <input id="comment" type="text" placeholder="Enter comment">
-        <input id="rate" type="number" placeholder="Rating" min="0" max="10">
-        <input type="submit" value="Add" onclick="insRow()">
-    </fieldset><br>
-    <div><b>Click to Sort based on ratings</b>
+      <b>Add mentees<b><br>
+       <input id="name" type="text" placeholder="Enter name" >
+       <input id ="rollNo" type="text" placeholder="Enter Roll no." >
+      <input id="comment" type="text" placeholder="Enter comment">
+      <input id="rate" type="number" placeholder="Rating" min="0" max="10">
+      <input type="submit" value="Add" onclick="insRow()">
+      </fieldset><br>
+        <div><b>Click to Sort based on ratings</b>
         <input type="submit" value="Sort" onclick="sort()"></div>
+    
     <br>
-    <div>*Place cursor over the cell to view complete details for name and comments.</div><br>
+    <div>*Place cursor over the cell to view complete details for name and comments.</div>
+    <div>*Roll number should be unique.</div><br>
   
     <table id="list"  align="center">
             <tr id="title" >
-              <td>  Name      </td>
-              <td>  Roll no.    </td>
-              <td>  Comments    </td>
-              <td>  Rating(0-10)</td>
-            </tr>
-    </table>
+      <td>  Name      </td>
+      <td>  Roll no.    </td>
+      <td>  Comments    </td>
+      <td>  Rating(0-10)</td>
+      </tr>
+          </table>
     <script type="text/javascript" src="mentee.js"></script>
 </body>
 </html>

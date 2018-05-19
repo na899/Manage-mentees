@@ -43,8 +43,9 @@ button{
 	background-color: red;
 	color:white;
 }
-#edit{
+.edit{
 	background-color: green;
+
 }
 h1{ 	max-width: 40vw;
 	margin: auto;
